@@ -39,12 +39,18 @@ This project scrapes book data from https://books.toscrape.com using Selenium an
 ```
 book-scraper/
 │
-├── main.py        # Scraper (raw data collection)
-├── to_csv.py     # Data cleaning + analysis
+├── src/
+    ├── main.py        # Scraper (raw data collection)
+    ├── to_csv.py     # Data cleaning + analysis
 ├── data/
 │   ├── books.json
 │   ├── books.csv
 │   └── filtered_books.csv
+├──images/
+    ├──code_overview_1.png
+    ├──code_overview_2.png
+    ├──books_json_image.png
+    ├──csv_output.png
 ```
 
 ---
