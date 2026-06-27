@@ -1,3 +1,34 @@
+"""
+Book Scraper - CSV Export Module
+
+Description:
+This module processes scraped book data and exports it into a structured
+CSV format. It cleans and formats the data to ensure consistency and
+readability for analysis or external use.
+
+Features:
+
+* Converts raw book data into a tabular format
+* Cleans fields (e.g., price formatting, availability text)
+* Handles missing or inconsistent data
+* Exports data to CSV files
+
+Output:
+
+* books.csv (complete dataset)
+* filtered_books.csv (optional, based on criteria)
+
+Dependencies:
+
+* pandas
+
+Usage:
+Run this script after data scraping to generate CSV files:
+python to_csv.py
+
+Author:
+Tanaka Tsodzo
+"""
 import pandas as pd
 import re
 
