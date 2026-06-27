@@ -1,3 +1,36 @@
+"""
+Book Scraper - Main Script
+
+Description:
+This script scrapes detailed information about books from the website
+https://books.toscrape.com. It navigates through all available pages
+(50 pages, ~1000 books) and extracts relevant data for each book,
+including titles, prices, availability, and descriptions.
+
+Features:
+
+* Iterates through all catalogue pages
+* Extracts book details from individual product pages
+* Handles pagination automatically
+* Stores data in a structured format (list of dictionaries)
+
+Output:
+
+* Raw dataset of books for further processing (CSV/JSON export)
+
+Dependencies:
+
+* requests
+* beautifulsoup4
+* selenium (optional, if dynamic content is used)
+
+Usage:
+Run the script to start scraping:
+python main.py
+
+Author:
+Tanaka Tsodzo
+"""
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
